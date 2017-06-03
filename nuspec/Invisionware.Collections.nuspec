@@ -18,12 +18,12 @@
 	</metadata>
 	<files>
 		<!-- Framework: PCL -->
-		<file src="..\src\Invisionware.Collections\bin\$Configuration$\Invisionware.Collections.dll" target="lib\portable-net45+win8+wpa81+wp8+monoandroid+monotouch+xamarinios+xamarinmac" />
-		<file src="..\src\Invisionware.Collections\bin\$Configuration$\Invisionware.Collections.pdb" target="lib\portable-net45+win8+wpa81+wp8+monoandroid+monotouch+xamarinios+xamarinmac" />
+		<file src="..\src\Invisionware.Collections\bin\$Configuration$\netstandard1.1\Invisionware.Collections.dll" target="lib\portable-net45+win8+wpa81+wp8+monoandroid+monotouch+xamarinios+xamarinmac" />
+		<file src="..\src\Invisionware.Collections\bin\$Configuration$\netstandard1.1\Invisionware.Collections.pdb" target="lib\portable-net45+win8+wpa81+wp8+monoandroid+monotouch+xamarinios+xamarinmac" />
 
 		<!-- Framework: NetStandard1.1 -->
-		<file src="..\src\Invisionware.Collections\bin\$Configuration$\Invisionware.Collections.dll" target="lib\netstandard1.1" />
-		<file src="..\src\Invisionware.Collections\bin\$Configuration$\Invisionware.Collections.pdb" target="lib\netstandard1.1" />
+		<file src="..\src\Invisionware.Collections\bin\$Configuration$\netstandard1.1\Invisionware.Collections.dll" target="lib\netstandard1.1" />
+		<file src="..\src\Invisionware.Collections\bin\$Configuration$\netstandard1.1\Invisionware.Collections.pdb" target="lib\netstandard1.1" />
 
 	</files>
 </package>
