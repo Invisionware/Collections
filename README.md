@@ -4,7 +4,13 @@ Invisionware Frmaework is a collection of utilities classes, extension methods, 
 ## Collections
 This portion of the Invisionware Framework is focused on enhancements to standard collections within the .NET frmaework
 
+Add the following using statement
+```c#
+using Invisionware.Collections;
+```
+
 ### Dictionary Extensions
+The following outline the extension methods provided for the IDictionary<,> class
 
 #### RenameKey
 Provides a simple way to rename an existing key in a dictionary
@@ -21,6 +27,8 @@ Console.WriteLine(dict["newkey"]);
 ```
 or
 ```c#
+using Invisionware.Collections;
+
 var dict = new Dictionary<int, string>();
 
 dict[1234] = "value";
