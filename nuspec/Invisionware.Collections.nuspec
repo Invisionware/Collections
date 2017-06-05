@@ -9,7 +9,9 @@
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<description>Contains various extension methods for collections</description>
 		<summary>Contains various extension methods collections</summary>
-		<releaseNotes>Initial Version</releaseNotes>
+		<projectUrl>https://github.com/Invisionware/Collections</projectUrl>
+		<licenseUrl>https://raw.githubusercontent.com/Invisionware/Collections/master/LICENSE</licenseUrl>
+		<releaseNotes></releaseNotes>
 		<copyright>(c) 2016 Invisionware</copyright>
 		<language>en-US</language>
 		<tags>invisionware dictionary</tags>
