@@ -4,7 +4,14 @@ Invisionware Frmaework is a collection of utilities classes, extension methods, 
 ## Collections
 This portion of the Invisionware Framework is focused on enhancements to standard collections within the .NET frmaework
 
-Add the following using statement
+[![NuGet](https://img.shields.io/nuget/v/Invisionware.Collections.svg)](https://www.nuget.org/packages/Invisionware.Collections)
+
+Packages related to Invisionware Collections
+```powershell
+Install-Package Invisionware.Collections
+```
+
+Then just add the following using statement
 ```c#
 using Invisionware.Collections;
 ```
