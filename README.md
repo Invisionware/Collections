@@ -1,47 +1,42 @@
-# Invisionware Framework
-Invisionware Frmaework is a collection of utilities classes, extension methods, and new functionality to simplify creatig application in .NET. Amost all of the libraries are support on Dektop and Mobile (including Xamarin) development environments to provide the maxinum value possible.
+# Cakebuild-Starter
+Provide a starting framework for using [CakeBuild](http://cakebuild.net) as your automated build scripting environment.
 
-## Collections
-This portion of the Invisionware Framework is focused on enhancements to standard collections within the .NET frmaework
+| File | Purpose |
+| ---- | ------- |
+| .gitignore | Standard Visual Studio git ignore file |
+| .tfignore | Standard Visual Studio TFS ignore file |
+| build.cake | Actual cake build script (Details below) |
+| build.ps1 | Poweshell script to start automated build on Windows |
+| build.osx.sh | Shell Script for OSX to start auotmated build |
+| build.sh | Shell Script for Linux to start automated build |
+| LICENSE | Standard License Agreement |
+| settings.json | JSON file for handling settings for automated build (Details below) |
+| version.json | JSON file for handling version for automated build (Details below) |
+| src/AssembyInfo.Shared.cs | Sample Shared AssemblyInfo file (Details below |)
 
-[![NuGet](https://img.shields.io/nuget/v/Invisionware.Collections.svg)](https://www.nuget.org/packages/Invisionware.Collections)
+# build.cake
 
-Packages related to Invisionware Collections
-```powershell
-Install-Package Invisionware.Collections
-```
+# build.ps1
+Usage:
+* .\build.ps1 -Target <Task> -Configuration=<Debug|Release> -skipBuild=<true|false> -skipUnitTest=<true|false> -skipPackage=<true|false>
+  * Task: Which cakebuild task to execute (Build|Clean|CleanAll|UnitTest|Package|Publish|DisplayHelp) [Default: DisplayHelp]
+  * Configuration: Build Configuration (Debug|Release) [Default: Release]
+  * skipBuild: Allows for skipping the build process (useful if you want to package or test without building) [Default: false]
+  * skipUnitTest: Allows for skipping the uit testing  process (useful if you want to build without runnign unit tests) [Default: false]
+  * skipPackage: Allows for skipping the packaging process (useful if you want to publish without repackaging ) [Default: false]
 
-Then just add the following using statement
-```c#
-using Invisionware.Collections;
-```
+# settings.json
+Contains all of the various settings for the build/test/packaging.  By default this is setup for 99% of standard projects
 
-### Dictionary Extensions
-The following outline the extension methods provided for the IDictionary<,> class
+# version.json
+Contains information for the current version information
 
-#### RenameKey
-Provides a simple way to rename an existing key in a dictionary
-
-```c#
-var dict = new Dictionary<string, string>();
-
-dict["key"] = "value";
-
-dict.RenameKey("key", "newkey");
-
-Console.WriteLine(dict["newkey"]);
-// "value"
-```
-or
-```c#
-using Invisionware.Collections;
-
-var dict = new Dictionary<int, string>();
-
-dict[1234] = "value";
-
-dict.RenameKey(1234, 9876);
-
-Console.WriteLine(dict[9876]));
-// "value"
-```
+# AssemblyInfo.Shared.cs
+A sample AssemblyInfo.cs that can be included in all of your projects to handle consolidating assembly details into a single location
+Note: The leverage this, you'll need to edit your existing AssemblyInfo.cs files and comment out the following attributes
+* [assembly: AssemblyCompany("")]
+* [assembly: AssemblyProduct("")]
+* [assembly: AssemblyCopyright("")]
+* [assembly: AssemblyTrademark("")]
+* [assembly: AssemblyConfiguration("")]
+* [assembly: AssemblyVersion("1.0.0")]
