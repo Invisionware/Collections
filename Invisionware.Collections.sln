@@ -12,14 +12,14 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".misc", ".misc", "{B67DBE97-2A64-4E27-8878-698FC381DABD}"
 	ProjectSection(SolutionItems) = preProject
 		build.cake = build.cake
+		build.settings.json = build.settings.json
+		build.version.json = build.version.json
 		README.md = README.md
-		settings.json = settings.json
-		version.json = version.json
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{FC9A0D21-3049-40EF-B6F1-55DA2CB685F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Invisionware.Collections", "src\Invisionware.Collections\Invisionware.Collections.csproj", "{C6677D99-FA98-4F79-92E8-8247C54561F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Invisionware.Collections", "src\Invisionware.Collections\Invisionware.Collections.csproj", "{C6677D99-FA98-4F79-92E8-8247C54561F1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Invisionware.Collections.Tests", "tests\Invisionware.Collections.Tests\Invisionware.Collections.Tests.csproj", "{913CA724-9FBC-49E4-991D-D9319B74DA05}"
 EndProject
@@ -79,5 +79,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{C6677D99-FA98-4F79-92E8-8247C54561F1} = {030783D5-8B49-446B-B4BD-623CE9C87C7E}
 		{913CA724-9FBC-49E4-991D-D9319B74DA05} = {FC9A0D21-3049-40EF-B6F1-55DA2CB685F3}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FF83FC45-8BF9-4415-B5D5-7B2FA722C55A}
 	EndGlobalSection
 EndGlobal

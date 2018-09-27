@@ -2,28 +2,25 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
 	<metadata>
 		<id>Invisionware.Collections</id>
-		<version>1.1.5</version>
+		<version>1.1.6</version>
 		<title>Invisionware.Collections</title>
 		<authors>Invisionware</authors>
 		<owners>Invisionware</owners>
+		<projectUrl>https://github.com/Invisionware/Invisionware.Collections</projectUrl>
+		<licenseUrl>https://raw.githubusercontent.com/Invisionware/Invisionware.Collections/master/LICENSE</licenseUrl>
+		<iconUrl>https://github.com/Invisionware/Invisionware.Collections/raw/master/logo.png</iconUrl>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<description>Contains various extension methods for collections</description>
 		<summary>Contains various extension methods collections</summary>
-		<projectUrl>https://github.com/Invisionware/Collections</projectUrl>
-		<licenseUrl>https://raw.githubusercontent.com/Invisionware/Collections/master/LICENSE</licenseUrl>
-		<iconUrl>https://github.com/Invisionware/Collections/raw/master/logo.png</iconUrl>
 		<releaseNotes></releaseNotes>
 		<copyright>Copyright © 2018 Invisionware</copyright>
 		<language>en-US</language>
-		<tags>invisionware dictionary</tags>
+		<tags>invisionware extensions dictionary enumerable list</tags>
 		<dependencies>
+			<dependency id="Invisionware.Core" version="1.0.0" />
 		</dependencies>
 	</metadata>
 	<files>
-		<!-- Framework: PCL -->
-		<file src="..\src\Invisionware.Collections\bin\$Configuration$\netstandard1.1\Invisionware.Collections.dll" target="lib\portable-net45+win8+wpa81+wp8+monoandroid+monotouch+xamarinios+xamarinmac" />
-		<file src="..\src\Invisionware.Collections\bin\$Configuration$\netstandard1.1\Invisionware.Collections.pdb" target="lib\portable-net45+win8+wpa81+wp8+monoandroid+monotouch+xamarinios+xamarinmac" />
-
 		<!-- Framework: NetStandard1.1 -->
 		<file src="..\src\Invisionware.Collections\bin\$Configuration$\netstandard1.1\Invisionware.Collections.dll" target="lib\netstandard1.1" />
 		<file src="..\src\Invisionware.Collections\bin\$Configuration$\netstandard1.1\Invisionware.Collections.pdb" target="lib\netstandard1.1" />
