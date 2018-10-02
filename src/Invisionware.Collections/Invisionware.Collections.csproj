@@ -1,17 +1,23 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
-  <PropertyGroup>
-    <TargetFramework>netstandard1.1</TargetFramework>
-    <AssemblyName>Invisionware.Collections</AssemblyName>
-    <PackageId>Invisionware.Collections</PackageId>
-    <NetStandardImplicitPackageVersion>1.6.1</NetStandardImplicitPackageVersion>
-    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
-    <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
-    <GenerateNeutralResourcesLanguageAttribute>false</GenerateNeutralResourcesLanguageAttribute>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Microsoft.NETCore.Portable.Compatibility" Version="1.0.2" />
-  </ItemGroup>
-
+	<PropertyGroup>
+		<TargetFramework>netstandard1.1</TargetFramework>
+		<AssemblyName>Invisionware.Collections</AssemblyName>
+		<PackageId>Invisionware.Collections</PackageId>
+		<NetStandardImplicitPackageVersion>1.6.1</NetStandardImplicitPackageVersion>
+		<GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+		<GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
+		<GenerateNeutralResourcesLanguageAttribute>false</GenerateNeutralResourcesLanguageAttribute>
+		<Authors>Invisionware</Authors>
+		<PackageProjectUrl>https://github.com/Invisionware/Invisionware.Collections</PackageProjectUrl>
+		<PackageLicenseUrl>https://raw.githubusercontent.com/Invisionware/Invisionware.Collections/master/LICENSE</PackageLicenseUrl>
+		<PackageIconUrl>https://github.com/Invisionware/Invisionware.Collections/raw/master/logo.png</PackageIconUrl>
+		<Description>Contains various extension methods for collections</Description>
+		<PackageReleaseNotes></PackageReleaseNotes>
+		<Copyright>Copyright © 2018 Invisionware</Copyright>
+		<PackageTags>invisionware extensions dictionary enumerable list</PackageTags>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.NETCore.Portable.Compatibility" Version="1.0.2" />
+	</ItemGroup>
 </Project>
