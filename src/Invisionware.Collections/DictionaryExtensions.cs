@@ -19,8 +19,7 @@ namespace Invisionware.Collections
 		public static bool RenameKey<TKey, TValue>(this IDictionary<TKey, TValue> source,
 			TKey oldKey, TKey newKey)
 		{
-			TValue value;
-			if (!source.TryGetValue(oldKey, out value))
+			if (!source.TryGetValue(oldKey, out TValue value))
 				return false;
 
 			source.Remove(oldKey);  // do not change order
