@@ -1,22 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+
 	<PropertyGroup>
-		<TargetFramework>netstandard1.1</TargetFramework>
-		<AssemblyName>Invisionware.Collections</AssemblyName>
+		<TargetFrameworks>netcoreapp1.0;netstandard1.0;net472</TargetFrameworks>
 		<PackageId>Invisionware.Collections</PackageId>
-		<NetStandardImplicitPackageVersion>1.6.1</NetStandardImplicitPackageVersion>
-		<GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
-		<GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
-		<GenerateNeutralResourcesLanguageAttribute>false</GenerateNeutralResourcesLanguageAttribute>
 		<Authors>Invisionware</Authors>
 		<PackageProjectUrl>https://github.com/Invisionware/Invisionware.Collections</PackageProjectUrl>
 		<license>Apache-2.0</license>
 		<PackageIconUrl>https://github.com/Invisionware/Invisionware.Collections/raw/master/logo.png</PackageIconUrl>
 		<Description>Contains various extension methods for collections</Description>
-		<PackageReleaseNotes></PackageReleaseNotes>
+		<PackageReleaseNotes />
 		<Copyright>Copyright © 2018 Invisionware</Copyright>
 		<PackageTags>invisionware extensions dictionary enumerable list</PackageTags>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<NetStandardImplicitPackageVersion>1.6.1</NetStandardImplicitPackageVersion>
 	</PropertyGroup>
-	<ItemGroup>
-	</ItemGroup>
 </Project>
